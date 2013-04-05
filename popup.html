@@ -1,0 +1,177 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Popup</title>
+<script src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.9.2.custom.min.js"></script>	
+<script src="js/popup.js"></script>
+<style type="text/css">
+body {
+	min-width: 740px; 
+	width: 740px;
+	min-height: 440px; 
+	width: 440px;
+	cursor: pointer; 
+	text-align: center; 
+	font-family:'微軟正黑體', Helvetica;
+}
+div {padding:0px; margin: 0px; text-align: center;font-family:'微軟正黑體', Helvetica;}
+span {font-family:'微軟正黑體', Helvetica; text-align: center;}
+img {
+	-moz-border-radius: 3px;
+	-webkit-border-radius: 3px;
+	border-radius: 3px;
+}
+
+.inner {
+	width: 740px; 
+	max-width: 740px;
+	height: 440px;
+	max-height: 440px;
+}
+.tab {padding: 10px;}
+.font12{font-size: 12px;}
+.font14{font-size: 14px;}
+.font16{font-size: 16px;}
+.font18{font-size: 18px;}
+.font20{font-size: 20px;}
+.font22{font-size: 22px;}
+.font34{font-size: 34px;}
+.bold {font-weight: bold;}
+
+.loading_img {padding: 100px;}
+
+.center {text-align: center}
+.left {text-align: left}
+.right {text-align: right}
+
+.top {vertical-align: top}
+.middle {vertical-align: middle}
+
+.blue {color: blue;}
+.orange {color: orange;}
+.red {color: red;}
+.green {color: green;}
+.purple {color: purple;}
+.midnightBlue {color: midnightBlue}
+
+#current_picture {float: right; }
+#current_info {padding: 20px;}
+
+#accordion {padding:0px; margin: 0px;}
+#slider-range-min {width: 580px; margin-left: 60px}
+#tide_astron{width: 720px; }
+#sever_days_info {font-size:14px; width: 720px; }
+table#sever_days_info  td {width: 30px;}
+table#api{width: 710px; padding: 5px;}
+table#api td{padding: 10px}
+
+#tabs-centre .ui-tabs-nav {
+	height: 2.35em;
+	text-align: center;
+}
+
+#tabs-centre .ui-tabs-nav li {
+	display: inline-block;
+	float: none;
+	margin: 0em;
+}
+
+td {
+	vertical-align: left;
+}
+</style>
+</head>
+<body>
+    <div id="accordion">
+    <h3><div id="panel0"></div></h3>
+    <div class="inner center">
+    	<div class="tabs" id="tabs-centre">
+			<ul>
+				<li><a href="#tabs-0"><div id="tab0" class="font14"></div></a></li>
+				<li><a href="#tabs-1"><div id="tab1" class="font14"></div></a></li>
+				<li><a href="#tabs-2"><div id="tab2" class="font14"></div></a></li>
+			</ul>
+			<div id="tabs-0" class="tab">
+				<img src="images/loading.gif" class="loading_img"/>
+			</div>
+			<div id="tabs-1" class="tab">
+				<img src="images/loading.gif" class="loading_img"/>
+			</div>
+			<div id="tabs-2" class="tab">
+				<img src="images/loading.gif" class="loading_img"/>
+			</div>
+		</div>
+    </div>
+
+    <h3><div id="panel1"></div></h3>
+    <div class="inner">
+    	<div class="tabs" id="tabs-centre">
+			<ul>
+				<li><a href="#tabs1-0"><div id="tab1-0" class="font14"></div></a></li>
+				<li><a href="#tabs1-1"><div id="tab1-1" class="font14"></div></a></li>
+				<li><a href="#tabs1-2"><div id="tab1-2" class="font14"></div></a></li>
+				<li><a href="#tabs1-3"><div id="tab1-3" class="font14"></div></a></li>
+				<li><a href="#tabs1-4"><div id="tab1-4" class="font14"></div></a></li>
+				<li><a href="#tabs1-5"><div id="tab1-5" class="font14"></div></a></li>
+				<li><a href="#tabs1-6"><div id="tab1-6" class="font14"></div></a></li>
+			</ul>
+			<div id="tabs1-0" class="tab">
+				<img src="images/loading.gif" class="loading_img"/>
+			</div>
+			<div id="tabs1-1" class="tab">
+				<img src="images/loading.gif" class="loading_img"/>
+			</div>
+			<div id="tabs1-2" class="tab">
+				<img src="images/loading.gif" class="loading_img"/>
+			</div>
+			<div id="tabs1-3" class="tab">
+				<img src="images/loading.gif" class="loading_img"/>
+			</div>
+			<div id="tabs1-4" class="tab">
+				<img src="images/loading.gif" class="loading_img"/>
+			</div>
+			<div id="tabs1-5" class="tab">
+				<img src="images/loading.gif" class="loading_img"/>
+			</div>
+			<div id="tabs1-6" class="tab">
+				<img src="images/loading.gif" class="loading_img"/>
+			</div>
+		</div>	
+    </div>
+
+    <h3><div id="panel2"></div></h3>
+    <div class="inner">
+    	<div class="tabs" id="tabs-centre">
+			<ul>
+				<li><a href="#tabs2-0"><div id="tab2-0" class="font14"></div></a></li>
+				<li><a href="#tabs2-1"><div id="tab2-1" class="font14"></div></a></li>
+				<li><a href="#tabs2-2"><div id="tab2-2" class="font14"></div></a></li>
+				<li><a href="#tabs2-3"><div id="tab2-3" class="font14"></div></a></li>
+				<li><a href="#tabs2-4"><div id="tab2-4" class="font14"></div></a></li>
+				<li><a href="#tabs2-5"><div id="tab2-5" class="font14"></div></a></li>
+			</ul>
+			<div id="tabs2-0" class="tab font14 left">
+				<img src="images/loading.gif" class="loading_img"/>
+			</div>
+			<div id="tabs2-1" class="tab font14 left">
+				<img src="images/loading.gif" class="loading_img"/>
+			</div>
+			<div id="tabs2-2" class="tab">
+				<img src="images/loading.gif" class="loading_img"/>
+			</div>
+			<div id="tabs2-3" class="tab">
+				<img src="images/loading.gif" class="loading_img"/>
+			</div>
+			<div id="tabs2-4" class="tab">
+				<img src="images/loading.gif" class="loading_img"/>
+			</div>
+			<div id="tabs2-5" class="tab">
+				<img src="images/loading.gif" class="loading_img"/>
+			</div>
+		</div>	
+    </div>
+</div>
+</body>
+</html>

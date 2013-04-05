@@ -1,0 +1,115 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Options</title>
+<!--<link type="text/css" rel="stylesheet" href="./css/ui.all.css" />-->
+<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/options.js"></script>
+
+<style type="text/css">
+body {font-family:'微軟正黑體', Helvetica; }
+</style>
+</head>
+
+
+<body>
+<div id="container">
+<div style="font-size:16pt;color:blue;">香 港 天 氣 選 項</div>
+<div style="font-size:16pt;color:blue;">Hong Kong Weather Options</div>
+
+<p>
+<div style="color:red" id="status"></div>
+語言:<br />
+Language:
+<select id="lang">
+ <option value="ENG">English</option>
+ <option value="CHI" selected>中文</option>
+</select>
+
+<p>
+更新時間(分鐘):<br />
+Update period(minutes):
+<select id="update">
+ <option value="60">1</option>
+ <option value="300">5</option>
+ <option value="900" selected>15</option>
+ <option value="1800">30</option>
+ <option value="3600">60</option>
+</select>
+
+<p>
+提示通知:<br />
+Notification:
+<select id="notification">
+ <option value="on">ON</option>
+ <option value="off" selected>OFF</option>
+</select>
+
+<p>
+提示通知消失時間 - 秒:<br />
+Notification disappeared time - seconds:
+<select id="notification_time">
+ <option value="5">5</option>
+ <option value="10">10</option>
+ <option value="60">60</option>
+ <option value="0" selected>不適用 N/A</option>
+</select>
+
+
+<p>
+圖示更新時間(如多於一個時適用) - 秒:<br />
+Icon update period(if there are more than one icon) - seconds:
+<select id="icon">
+ <option value="5">5</option>
+ <option value="10">10</option>
+ <option value="20">20</option>
+ <option value="30" selected>30</option>
+ <option value="60">60</option>
+</select>
+<!--
+<p>
+主題預覽: <br/>
+Preview theme:
+<script type="text/javascript" src="js/themeswitchertool"></script>
+<span id="switcher"></span>
+-->
+<p>
+主題更換:<br />
+Theme:
+<select id="theme">
+	 <option value="ui-darkness">Ui-darkness</option>
+	 <option value="ui-lightness">Ui-lightness</option>
+	 <option value="smoothness">Smoothness</option>
+	 <option value="start">Start</option>
+	 <option value="redmond">Redmond</option>
+	 <option value="sunny">Sunny</option>
+	 <option value="overcast">Overcast</option>
+	 <option value="le-frog">Le-frog</option>
+	 <option value="flick">Flick</option>
+	 <option value="Pepper-grinder">Pepper-grinder</option>
+	 <option value="eggplant">Eggplant</option>
+	 <option value="dark-hive">Dark-hive</option>
+	 <option value="cupertino">Cupertino</option>
+	 <option value="south-street">South-street</option>
+	 <option value="blitzer">Blitzer</option>
+	 <option value="humanity">Humanity</option>
+	 <option value="hot-sneaks">Hot-sneaks</option>
+	 <option value="excite-bike">Excite-bike</option>
+	 <option value="vader">Vader</option>
+	 <option value="dot-luv">Dot-luv</option>
+	 <option value="mint-choc">Mint-choc</option>
+	 <option value="black-tie" selected>預設 Default(Black-tie)</option>
+	 <option value="trontastic">Trontastic</option>
+	 <option value="swanky-purse">Swanky-purse</option>
+</select>
+
+
+<p>
+<button id="save">Save</button>
+
+<p>
+Version: 4.0.6<br/>
+<i>Ian Chan</i> 
+</body>
+</html>

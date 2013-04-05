@@ -1,0 +1,30 @@
+{
+    "name": "Hong Kong Weather",
+    "version": "4.0.6",
+    "description": "Hong Kong Weather",
+    "manifest_version": 2,
+    "background": {
+        "page": "background.html"
+    },
+    "description": "Provide Hong Kong instant weather and warning signals from time to time",
+    "browser_action": {
+        "default_icon": "images/icon.png",
+        "default_title": "Hong Kong Weather",
+    	"default_popup": "popup.html"		
+    },
+    "icons": { 
+        "16": "images/icon16.png",
+        "48": "images/icon48.png",
+        "128": "images/icon128.png" 
+    },
+    "options_page": "options.html",
+    "update_url": "http://clients2.google.com/service/update2/crx",
+    "permissions": ["tabs", "http://www.hko.gov.hk/*", "http://www.weather.gov.hk/*",  "http://www.epd-asg.gov.hk/*","notifications"],
+    "content_security_policy": "script-src 'self' 'unsafe-eval' https://ssl.google-analytics.com; object-src 'self'",
+	"web_accessible_resources": [
+		"images/warning/tc1.png", "images/warning/tc3.png", "images/warning/tc8ne.png", "images/warning/tc8nw.png", "images/warning/tc8se.png", "images/warning/tc8sw.png", "images/warning/tc9.png", "images/warning/tc10.png", "images/warning/raina.png", "images/warning/cold.png", "images/warning/rainr.png", "images/warning/rainb.png",
+		"images/warning/ts.png", "images/warning/ntfl.png", "images/warning/landslip.png", "images/warning/sms.png", "images/warning/frost.png", "images/warning/firey.png",
+		"images/warning/firer.png", "images/warning/cold.png", "images/warning/vhot.png", "images/warning/tsunami-warn.png"		
+	]
+
+}
